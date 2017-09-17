@@ -1,0 +1,45 @@
+body{
+  background-color: #000;
+
+}
+h1{
+  color: #f00;
+  text-align: center;
+}
+
+.mainbox{
+
+}
+.button_box{
+  display: flex;
+  justify-content: space-around;
+  color: #fff;
+  border-color: #fff;
+}
+.button{
+  width: 100px;
+  height: 100px;
+}
+.place{
+  display: flex;
+  justify-content: space-around;
+  margin-top: 50px;
+}
+.youbox{
+  color: #0f0;
+  text-align: center;
+}
+.you{
+width: 300px;
+height: 300px;
+background-color: #000;
+}
+.rivalbox{
+  color: #00f;
+  text-align: center;
+}
+.rival{
+  width: 300px;
+  height: 300px;
+  background-color: #000;
+}

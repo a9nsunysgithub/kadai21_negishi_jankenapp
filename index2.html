@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" type="text/css" href="style2.css">
+  <title>Document</title>
+</head>
+<body>
+
+<h1>深夜の漢字でじゃんけん</h1>
+<div class="mainbox">
+  <div class="button_box">
+    <input value="ぐ" type="button" name="g" class="button" onclick="gg()">
+    <input value="ちょ" type="button" name="t" class="button" onclick="tt()">
+    <input value="ぱ" type="button" name="p" class="button" onclick="pp()">
+  </div>
+
+  <div class="place">
+    <div class="youbox">
+      <p>あなた</p>
+      <div class="you" id="you">
+      </div>
+    </div>
+    <div class="rivalbox">
+        <p>敵</p>
+      <div class="rival" id="rival">
+      </div>
+    </div>
+  </div>
+</div>
+  <script type="text/javascript">
+  function gg(){
+  var img_you=["img_g/1.gif","img_g/2.gif","img_g/3.gif","img_g/4.gif","img_g/5.gif",
+               "img_g/1.gif","img_g/2.gif","img_g/3.gif","img_g/4.gif","img_g/5.gif",
+               "img_g/1.gif","img_g/2.gif","img_g/3.gif","img_g/4.gif","img_g/5.gif"];
+  var img=["img_g/1.gif","img_g/2.gif","img_g/3.gif","img_g/4.gif","img_g/5.gif",
+            "img_t/1.gif","img_t/2.gif","img_t/3.gif","img_t/4.gif","img_t/5.gif",
+            "img_p/1.gif","img_p/2.gif","img_p/3.gif","img_p/4.gif","img_p/5.gif"];
+  var you = document.getElementById('you');
+  var rival = document.getElementById('rival');
+  console.log(you);
+  console.log(rival);
+  var rand = Math.floor(Math.random()*14);
+  // var rand = Math.floor(Math.random()*14);
+   // var rand = Math.floor(Math.random()*14);
+  if (rand == 0) {
+  you.innerHTML = '<img src="'+img_you[0]+'" alt="" />';
+  rival.innerHTML = '<img src="'+img[0]+'" alt="" />';
+  }if (rand == 1) {
+  you.innerHTML = '<img src="'+img_you[1]+'" alt="" />';
+  rival.innerHTML = '<img src="'+img[1]+'" alt="" />';
+  }if (rand == 2) {
+  you.innerHTML = '<img src="'+img_you[2]+'" alt="" />';
+  rival.innerHTML = '<img src="'+img[2]+'" alt="" />';
+  }if (rand == 3) {
+    you.innerHTML = '<img src="'+img_you[3]+'" alt="" />';
+    rival.innerHTML = '<img src="'+img[3]+'" alt="" />';
+  }if (rand == 4) {
+    you.innerHTML = '<img src="'+img_you[4]+'" alt="" />';
+    rival.innerHTML = '<img src="'+img[4]+'" alt="" />';
+  }if (rand == 5) {
+  you.innerHTML = '<img src="'+img_you[0]+'" alt="" />';
+  rival.innerHTML = '<img src="'+img[5]+'" alt="" />';
+  }if (rand == 6) {
+  you.innerHTML = '<img src="'+img_you[1]+'" alt="" />';
+  rival.innerHTML = '<img src="'+img[6]+'" alt="" />';
+  }if (rand == 7) {
+  you.innerHTML = '<img src="'+img_you[2]+'" alt="" />';
+  rival.innerHTML = '<img src="'+img[7]+'" alt="" />';
+  }if (rand == 8) {
+    you.innerHTML = '<img src="'+img_you[3]+'" alt="" />';
+    rival.innerHTML = '<img src="'+img[8]+'" alt="" />';
+  }if (rand == 9) {
+    you.innerHTML = '<img src="'+img_you[4]+'" alt="" />';
+    rival.innerHTML = '<img src="'+img[9]+'" alt="" />';
+  }if (rand == 10) {
+  you.innerHTML = '<img src="'+img_you[0]+'" alt="" />';
+  rival.innerHTML = '<img src="'+img[10]+'" alt="" />';
+  }if (rand == 11) {
+  you.innerHTML = '<img src="'+img_you[1]+'" alt="" />';
+  rival.innerHTML = '<img src="'+img[11]+'" alt="" />';
+  }if (rand == 12) {
+  you.innerHTML = '<img src="'+img_you[2]+'" alt="" />';
+  rival.innerHTML = '<img src="'+img[12]+'" alt="" />';
+  }if (rand == 13) {
+    you.innerHTML = '<img src="'+img_you[3]+'" alt="" />';
+    rival.innerHTML = '<img src="'+img[13]+'" alt="" />';
+  }if (rand == 14) {
+    you.innerHTML = '<img src="'+img_you[4]+'" alt="" />';
+    rival.innerHTML = '<img src="'+img[14]+'" alt="" />';
+  }
+  }
+
+
+  function tt(){
+  var img_you=["img_t/1.gif","img_t/2.gif","img_t/3.gif","img_t/4.gif","img_t/5.gif",
+               "img_t/1.gif","img_t/2.gif","img_t/3.gif","img_t/4.gif","img_t/5.gif",
+               "img_t/1.gif","img_t/2.gif","img_t/3.gif","img_t/4.gif","img_t/5.gif"];
+  var img=["img_g/1.gif","img_g/2.gif","img_g/3.gif","img_g/4.gif","img_g/5.gif",
+            "img_t/1.gif","img_t/2.gif","img_t/3.gif","img_t/4.gif","img_t/5.gif",
+            "img_p/1.gif","img_p/2.gif","img_p/3.gif","img_p/4.gif","img_p/5.gif"];
+  var you = document.getElementById('you');
+  var rival = document.getElementById('rival');
+  console.log(you);
+  console.log(rival);
+  var rand = Math.floor(Math.random()*14);
+  // var rand = Math.floor(Math.random()*14);
+   // var rand = Math.floor(Math.random()*14);
+  if (rand == 0) {
+  you.innerHTML = '<img src="'+img_you[0]+'" alt="" />';
+  rival.innerHTML = '<img src="'+img[0]+'" alt="" />';
+  }if (rand == 1) {
+  you.innerHTML = '<img src="'+img_you[1]+'" alt="" />';
+  rival.innerHTML = '<img src="'+img[1]+'" alt="" />';
+  }if (rand == 2) {
+  you.innerHTML = '<img src="'+img_you[2]+'" alt="" />';
+  rival.innerHTML = '<img src="'+img[2]+'" alt="" />';
+  }if (rand == 3) {
+  you.innerHTML = '<img src="'+img_you[3]+'" alt="" />';
+  rival.innerHTML = '<img src="'+img[3]+'" alt="" />';
+  }if (rand == 4) {
+  you.innerHTML = '<img src="'+img_you[4]+'" alt="" />';
+  rival.innerHTML = '<img src="'+img[4]+'" alt="" />';
+  }if (rand == 5) {
+  you.innerHTML = '<img src="'+img_you[0]+'" alt="" />';
+  rival.innerHTML = '<img src="'+img[5]+'" alt="" />';
+  }if (rand == 6) {
+  you.innerHTML = '<img src="'+img_you[1]+'" alt="" />';
+  rival.innerHTML = '<img src="'+img[6]+'" alt="" />';
+  }if (rand == 7) {
+  you.innerHTML = '<img src="'+img_you[2]+'" alt="" />';
+  rival.innerHTML = '<img src="'+img[7]+'" alt="" />';
+  }if (rand == 8) {
+  you.innerHTML = '<img src="'+img_you[3]+'" alt="" />';
+  rival.innerHTML = '<img src="'+img[8]+'" alt="" />';
+  }if (rand == 9) {
+  you.innerHTML = '<img src="'+img_you[4]+'" alt="" />';
+  rival.innerHTML = '<img src="'+img[9]+'" alt="" />';
+  }if (rand == 10) {
+  you.innerHTML = '<img src="'+img_you[0]+'" alt="" />';
+  rival.innerHTML = '<img src="'+img[10]+'" alt="" />';
+  }if (rand == 11) {
+  you.innerHTML = '<img src="'+img_you[1]+'" alt="" />';
+  rival.innerHTML = '<img src="'+img[11]+'" alt="" />';
+  }if (rand == 12) {
+  you.innerHTML = '<img src="'+img_you[2]+'" alt="" />';
+  rival.innerHTML = '<img src="'+img[12]+'" alt="" />';
+  }if (rand == 13) {
+  you.innerHTML = '<img src="'+img_you[3]+'" alt="" />';
+  rival.innerHTML = '<img src="'+img[13]+'" alt="" />';
+  }if (rand == 14) {
+  you.innerHTML = '<img src="'+img_you[4]+'" alt="" />';
+  rival.innerHTML = '<img src="'+img[14]+'" alt="" />';
+  }
+  }
+
+function pp(){
+var img_you=["img_p/1.gif","img_p/2.gif","img_p/3.gif","img_p/4.gif","img_p/5.gif",
+             "img_p/1.gif","img_p/2.gif","img_p/3.gif","img_p/4.gif","img_p/5.gif",
+             "img_p/1.gif","img_p/2.gif","img_p/3.gif","img_p/4.gif","img_p/5.gif"];
+var img=["img_g/1.gif","img_g/2.gif","img_g/3.gif","img_g/4.gif","img_g/5.gif",
+          "img_t/1.gif","img_t/2.gif","img_t/3.gif","img_t/4.gif","img_t/5.gif",
+          "img_p/1.gif","img_p/2.gif","img_p/3.gif","img_p/4.gif","img_p/5.gif"];
+var you = document.getElementById('you');
+var rival = document.getElementById('rival');
+console.log(you);
+console.log(rival);
+var rand = Math.floor(Math.random()*14);
+if (rand == 0) {
+you.innerHTML = '<img src="'+img_you[0]+'" alt="" />';
+rival.innerHTML = '<img src="'+img[0]+'" alt="" />';
+}if (rand == 1) {
+you.innerHTML = '<img src="'+img_you[1]+'" alt="" />';
+rival.innerHTML = '<img src="'+img[1]+'" alt="" />';
+}if (rand == 2) {
+you.innerHTML = '<img src="'+img_you[2]+'" alt="" />';
+rival.innerHTML = '<img src="'+img[2]+'" alt="" />';
+}if (rand == 3) {
+you.innerHTML = '<img src="'+img_you[3]+'" alt="" />';
+rival.innerHTML = '<img src="'+img[3]+'" alt="" />';
+}if (rand == 4) {
+you.innerHTML = '<img src="'+img_you[4]+'" alt="" />';
+rival.innerHTML = '<img src="'+img[4]+'" alt="" />';
+}if (rand == 5) {
+you.innerHTML = '<img src="'+img_you[0]+'" alt="" />';
+rival.innerHTML = '<img src="'+img[5]+'" alt="" />';
+}if (rand == 6) {
+you.innerHTML = '<img src="'+img_you[1]+'" alt="" />';
+rival.innerHTML = '<img src="'+img[6]+'" alt="" />';
+}if (rand == 7) {
+you.innerHTML = '<img src="'+img_you[2]+'" alt="" />';
+rival.innerHTML = '<img src="'+img[7]+'" alt="" />';
+}if (rand == 8) {
+you.innerHTML = '<img src="'+img_you[3]+'" alt="" />';
+rival.innerHTML = '<img src="'+img[8]+'" alt="" />';
+}if (rand == 9) {
+you.innerHTML = '<img src="'+img_you[4]+'" alt="" />';
+rival.innerHTML = '<img src="'+img[9]+'" alt="" />';
+}if (rand == 10) {
+you.innerHTML = '<img src="'+img_you[0]+'" alt="" />';
+rival.innerHTML = '<img src="'+img[10]+'" alt="" />';
+}if (rand == 11) {
+you.innerHTML = '<img src="'+img_you[1]+'" alt="" />';
+rival.innerHTML = '<img src="'+img[11]+'" alt="" />';
+}if (rand == 12) {
+you.innerHTML = '<img src="'+img_you[2]+'" alt="" />';
+rival.innerHTML = '<img src="'+img[12]+'" alt="" />';
+}if (rand == 13) {
+you.innerHTML = '<img src="'+img_you[3]+'" alt="" />';
+rival.innerHTML = '<img src="'+img[13]+'" alt="" />';
+}if (rand == 14) {
+you.innerHTML = '<img src="'+img_you[4]+'" alt="" />';
+rival.innerHTML = '<img src="'+img[14]+'" alt="" />';
+}
+}
+</script>
+
+</body>
+</html>
